@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="26dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lamdario Zidni Ilman"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/judul"/>
+
+    <EditText
+        android:id="@+id/masuknama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"/>
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/masuknama"/>
+
+    <EditText
+        android:id="@+id/masukAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"/>
+
+    <TextView
+        android:id="@+id/kampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kampus"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/masukAlamat"/>
+
+    <EditText
+        android:id="@+id/masukKampus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kampus"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@id/img2"
+        android:layout_marginRight="15sp"
+        android:src="@drawable/edit"
+        android:layout_below="@id/masukKampus" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/edit"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/masukKampus"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@id/img2"
+        android:layout_toEndOf="@id/img2"
+        android:layout_below="@id/masukKampus"
+
+        android:src="@drawable/edit"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img2"
+        android:layout_marginLeft="10dp"
+        android:text="Ok"/>
+
+    <Button
+        android:id="@+id/batal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/img3"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:text="Batal"/>
+
+
+</RelativeLayout>
